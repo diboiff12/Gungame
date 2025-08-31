@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=3 uid="uid://c7xb0sxchbvyg"]
+
+[ext_resource type="Script" path="res://Script/bullet_debris.gd" id="1_m0u5v"]
+
+[sub_resource type="Curve" id="Curve_cvijr"]
+_data = [Vector2(0, 0.989474), 0.0, 0.0, 0, 0, Vector2(0.252747, 1), 0.0, 0.0, 0, 0, Vector2(0.494506, 0), -1.20778, 0.0, 0, 0]
+point_count = 3
+
+[node name="Bullet_Debris" type="CPUParticles2D"]
+emitting = false
+amount = 10
+lifetime = 0.5
+one_shot = true
+explosiveness = 1.0
+gravity = Vector2(0, 0)
+initial_velocity_min = 400.0
+initial_velocity_max = 600.0
+linear_accel_min = 200.0
+linear_accel_max = 200.0
+scale_amount_min = 4.0
+scale_amount_max = 4.0
+scale_amount_curve = SubResource("Curve_cvijr")
+script = ExtResource("1_m0u5v")

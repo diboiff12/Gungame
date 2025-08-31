@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://cl3gvnya8yqwt"]
+
+[ext_resource type="Script" path="res://Script/Bullet.gd" id="1_6j53u"]
+[ext_resource type="PackedScene" uid="uid://c7xb0sxchbvyg" path="res://Scene/bullet_debris.tscn" id="2_u85px"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xeqed"]
+size = Vector2(40, 4)
+
+[node name="Bullet" type="Area2D" node_paths=PackedStringArray("wall_detector")]
+script = ExtResource("1_6j53u")
+bullet_debris_scene = ExtResource("2_u85px")
+wall_detector = NodePath("Wall_Detector")
+
+[node name="Line2D" type="Line2D" parent="."]
+points = PackedVector2Array(-20, 0, 20, 0)
+width = 4.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_xeqed")
+
+[node name="Wall_Detector" type="RayCast2D" parent="."]
+target_position = Vector2(100, 0)

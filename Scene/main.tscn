@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://csxr7e6twt0vu"]
+
+[ext_resource type="PackedScene" uid="uid://bb0dk75f7boup" path="res://Scene/map.tscn" id="1_8qk86"]
+[ext_resource type="PackedScene" uid="uid://dbl15ya57h30" path="res://Scene/player.tscn" id="2_fci61"]
+[ext_resource type="PackedScene" uid="uid://r4lemhboodap" path="res://Scene/monster.tscn" id="3_lummk"]
+
+[node name="Main" type="Node2D"]
+
+[node name="Map" parent="." instance=ExtResource("1_8qk86")]
+position = Vector2(-768, -432)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="Player" parent="." instance=ExtResource("2_fci61")]
+position = Vector2(-116, -142)
+
+[node name="Monster" parent="." instance=ExtResource("3_lummk")]
+position = Vector2(-68, 203)

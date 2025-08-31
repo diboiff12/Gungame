@@ -1,0 +1,27 @@
+[gd_scene load_steps=5 format=3 uid="uid://dbl15ya57h30"]
+
+[ext_resource type="Script" path="res://Script/player.gd" id="1_4eap5"]
+[ext_resource type="PackedScene" uid="uid://cl3gvnya8yqwt" path="res://Scene/bullet.tscn" id="2_ej57t"]
+[ext_resource type="Texture2D" uid="uid://dvaixuu638lec" path="res://Resource/pixil-frame-0 (6).png" id="2_wmo1h"]
+[ext_resource type="Script" path="res://Script/Ground_Detector.gd" id="4_emc65"]
+
+[node name="Player" type="CharacterBody2D" node_paths=PackedStringArray("sprite", "ground_detector")]
+script = ExtResource("1_4eap5")
+sprite = NodePath("Pixil-frame-0(6)")
+bullet_scene = ExtResource("2_ej57t")
+ground_detector = NodePath("Ground_Detector")
+
+[node name="Pixil-frame-0(6)" type="Sprite2D" parent="."]
+scale = Vector2(4, 4)
+texture = ExtResource("2_wmo1h")
+offset = Vector2(0, 2)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+visible = false
+position = Vector2(0, 8)
+rotation = 0.0261799
+polygon = PackedVector2Array(-24.4106, -15.3663, -28.3045, -11.2629, -27.8857, 4.73158, -30.8847, 4.81011, -31.5964, 15.8325, -19.5743, 16.5181, -9.89187, 4.2604, -0.89495, 4.02481, 4.91976, -3.12986, 27.8857, -4.73158, 27.4669, -20.7261, 23.4682, -20.6214, 23.5729, -16.6228)
+
+[node name="Ground_Detector" type="RayCast2D" parent="."]
+target_position = Vector2(0, 40)
+script = ExtResource("4_emc65")
