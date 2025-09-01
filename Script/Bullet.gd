@@ -14,13 +14,13 @@ func _process(delta):
 	position += Vector2.RIGHT.rotated(rotation)*speed*delta
 
 	if wall_detector.is_colliding():
-		if wall_detector.get_collider() is TileMap:
+		if wall_detector.get_collider() is TileMapLayer:
 			if (speed*delta)**2 > position.distance_squared_to(wall_detector.get_collision_point()):
 				collide_with_wall()
 
 
 func on_body_entered(body):
-	if body is TileMap:
+	if body is TileMapLayer:
 		var bullet_debris = bullet_debris_scene.instantiate()
 		bullet_debris.rotation = rotation+PI
 		bullet_debris.position = position

@@ -34,6 +34,7 @@ func _physics_process(delta):
 	if Input.is_action_pressed("ui_up") and ground_detector.is_on_floor:
 		base_velocity.y = JUMP_VELOCITY
 
+
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.
 	var direction = Input.get_axis("ui_left", "ui_right")

@@ -6,6 +6,7 @@
 [ext_resource type="Script" path="res://Script/Ground_Detector.gd" id="4_emc65"]
 
 [node name="Player" type="CharacterBody2D" node_paths=PackedStringArray("sprite", "ground_detector")]
+collision_layer = 2
 script = ExtResource("1_4eap5")
 sprite = NodePath("Pixil-frame-0(6)")
 bullet_scene = ExtResource("2_ej57t")
