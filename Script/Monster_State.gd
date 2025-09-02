@@ -4,9 +4,10 @@ class_name Monster_State extends State
 
 const ATTACK = "Attack"
 const WALK = "Walk"
+const KNOCKBACK = "Knockback"
 
-var monster:CharacterBody2D
-var player:CharacterBody2D
+var monster:Monster
+var player:Player
 
 func _ready() -> void:
 	print(owner)

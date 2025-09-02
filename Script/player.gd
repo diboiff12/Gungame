@@ -1,5 +1,5 @@
 extends CharacterBody2D
-
+class_name Player
 
 @export var SPEED = 600.0
 @export var JUMP_VELOCITY = -1000.0
