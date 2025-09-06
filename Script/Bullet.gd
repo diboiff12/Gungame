@@ -3,7 +3,7 @@ extends Area2D
 @export var speed = 2000
 
 @export var damage = 30
-@export var force = 200
+@export var force = 300
 
 @export var bullet_debris_scene:PackedScene
 @export var wall_detector:RayCast2D

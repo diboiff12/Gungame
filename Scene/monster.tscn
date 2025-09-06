@@ -1,11 +1,11 @@
 [gd_scene load_steps=28 format=3 uid="uid://r4lemhboodap"]
 
-[ext_resource type="Script" path="res://Script/Monster.gd" id="1_okgk5"]
+[ext_resource type="Script" uid="uid://c34busvlg6evv" path="res://Script/Monster.gd" id="1_okgk5"]
 [ext_resource type="Texture2D" uid="uid://vxgnudbjyva5" path="res://Resource/monster1.png" id="2_oh8wo"]
-[ext_resource type="Script" path="res://Script/Monster_State_Machine.gd" id="3_udmae"]
-[ext_resource type="Script" path="res://Script/Walk.gd" id="4_x5st2"]
-[ext_resource type="Script" path="res://Script/Attack.gd" id="5_m1v0x"]
-[ext_resource type="Script" path="res://Script/knockback.gd" id="6_ayofj"]
+[ext_resource type="Script" uid="uid://dxu13ctqdivnf" path="res://Script/Monster_State_Machine.gd" id="3_udmae"]
+[ext_resource type="Script" uid="uid://b6ews4xyayeu0" path="res://Script/Walk.gd" id="4_x5st2"]
+[ext_resource type="Script" uid="uid://dbnkn5xwj30nl" path="res://Script/Attack.gd" id="5_m1v0x"]
+[ext_resource type="Script" uid="uid://ijbmnhsfd75r" path="res://Script/knockback.gd" id="6_ayofj"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_11onk"]
 atlas = ExtResource("2_oh8wo")

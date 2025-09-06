@@ -1,9 +1,9 @@
 [gd_scene load_steps=5 format=3 uid="uid://dbl15ya57h30"]
 
-[ext_resource type="Script" path="res://Script/player.gd" id="1_4eap5"]
+[ext_resource type="Script" uid="uid://caejyfrdsc8iy" path="res://Script/player.gd" id="1_4eap5"]
 [ext_resource type="PackedScene" uid="uid://cl3gvnya8yqwt" path="res://Scene/bullet.tscn" id="2_ej57t"]
 [ext_resource type="Texture2D" uid="uid://dvaixuu638lec" path="res://Resource/pixil-frame-0 (6).png" id="2_wmo1h"]
-[ext_resource type="Script" path="res://Script/Ground_Detector.gd" id="4_emc65"]
+[ext_resource type="Script" uid="uid://bx2lr3w8y505p" path="res://Script/Ground_Detector.gd" id="4_emc65"]
 
 [node name="Player" type="CharacterBody2D" node_paths=PackedStringArray("sprite", "ground_detector")]
 collision_layer = 2

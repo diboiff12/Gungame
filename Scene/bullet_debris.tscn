@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://c7xb0sxchbvyg"]
 
-[ext_resource type="Script" path="res://Script/bullet_debris.gd" id="1_m0u5v"]
+[ext_resource type="Script" uid="uid://d25yqk7w7umx1" path="res://Script/bullet_debris.gd" id="1_m0u5v"]
 
 [sub_resource type="Curve" id="Curve_cvijr"]
 _data = [Vector2(0, 0.989474), 0.0, 0.0, 0, 0, Vector2(0.252747, 1), 0.0, 0.0, 0, 0, Vector2(0.494506, 0), -1.20778, 0.0, 0, 0]
